@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  /* font-family: Arial, Helvetica, sans-serif;  */
+  background-image: url('food.jpg');
+}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dimgray;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dimgray;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: darkmagenta;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/*Navigation Bar: Logo and Image  */
+
+#logo{
+    margin: 34px 40px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 10px 12px;
+    border-radius: 28px;
+}
+
+
+/* Navigation Bar: List styling */
+
+
+#navbar ul{
+    display: flex;
+    margin:10px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(24, 22, 22);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+#navbar ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    font-family: 'PT Serif', serif;
+}
+
+#navbar ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none; 
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: cornsilk;
+    border-radius: 16px;
+    
+}
+
+</style>
+</head>
+<body >
+  <nav id="navbar">
+    <div id="logo">
+        <img src="fork.jpg" alt="Myonlinemeal.com">
+    </div>
+
+    <ul>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="services.html">Services</a></li>
+        <li class="item"><a href="about.html">About US</a></li>
+        <li class="item"><a href="contact.html">Contact Us</a></li>
+        <li class="item "><a href="Login.html">Login</a></li>
+        <li class="item"><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+<form action="" style="max-width:500px;margin:auto">
+  <h2>Register Form</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <button type="submit" class="btn">Register</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        Services Section
+
+.box li{
+    list-style: none;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(238, 237, 237);
+    box-shadow: 8px -16px 28px rgb(149, 243, 9);
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 14px;
+    padding: 28px 16px;
+    border-radius: 20px;
+    background-color: rgb(245, 231, 231);
+}
+
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 150px;
+}
+
+#services .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.services-container h1{
+    color: rgb(7, 7, 253);
+}
+
+.box details{
+    color: rgb(250, 12, 12);
+}
+
+.box details:hover{
+    cursor: pointer;
+    background-color: rgb(16, 17, 16);
+    border-radius: 8px;
+}
+
+.box p:hover{
+    background-color: rgb(218, 192, 192);
+    border-radius: 12px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/*Navigation Bar: Logo and Image  */
+
+#logo{
+    margin: 34px 40px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 10px 12px;
+    border-radius: 28px;
+}
+
+
+/* Navigation Bar: List styling */
+
+
+#navbar ul{
+    display: flex;
+    margin:10px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(24, 22, 22);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+#navbar ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    font-family: 'PT Serif', serif;
+}
+
+#navbar ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none; 
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: cornsilk;
+    border-radius: 16px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="fork.jpg" alt="Myonlinemeal.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="about.html">About US</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="item "><a href="Login.html">Login</a></li>
+            <li class="item"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <section class="services-container">
+        <h1 class="h-primary-center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondary-center">Chinese Food</h2>
+                <p class="center">
+                    Chinese cuisines are an important part of Chinese culture, which includes cuisines originating from
+                    the diverse regions of China, as well as from Overseas Chinese who have settled in other parts of
+                    the world
+                </p><br>
+                <details>
+                    <summary>Food Items</summary>
+                    <ul>
+                        <li>Pizza</li>
+                        <li>Chowmein</li>
+                        <li>Pasta</li>
+                        <li>Egg Rolls</li>
+                        <li>Hot Pot</li>
+                        <li>Szechwan Chilli Chicken</li>
+                        <li>Dim Sums</li>
+                        <li>Spring Rolls</li>
+                        <li>Honey chilli Potato</li>
+                        <li>Perry Perry chicken</li>
+                        <li>Red chiili chicken</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary-center">Indian Food</h2>
+                <p class="center">
+                    Indian cuisine consists of a variety of regional and traditional cuisines native to the Indian
+                    subcontinent. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these
+                    cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits.
+                </p><br>
+                <details>
+                    <summary>Food Items</summary>
+                    <ul>
+                        <li>Panner Tikka</li>
+                        <li>Soya chaap</li>
+                        <li>Tandoori Chicken</li>
+                        <li>Chicken Roast</li>
+                        <li>Chicken Briyani</li>
+                        <li>Mutton Briyani</li>
+                        <li>Tawa Roti</li>
+                        <li>Dal Fry</li>
+                        <li>Idli</li>
+                        <li>Masala Panner Dosa</li>
+                        <li>Malai Chaap</li>
+                        <li>Veg Soup</li>
+                    </ul>
+                </details>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary-center">Bulk Catering</h2>
+                <p class="center">Now here, we preseent you the biggest offer of time. Every meal now at your doorsteps
+                    in various taste and colour. Just order your favourite palte and dish just in one click and go. We
+                    present you food in every taste from briyani to lassi.</p><br>
+                <details>
+                    <summary>Food Items</summary>
+                    <ul>
+                        <li>Barbeque Thali</li>
+                        <li>Chicken handi Large</li>
+                        <li>Shadi plate</li>
+                        <li>Chappan Bhog Thali</li>
+                        <li>Large thandhai khana</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

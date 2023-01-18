@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us card || Learning robo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <style>
+            
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    align-content: center;
+    min-height: 100vh;
+}
+mark.red {
+    color:yellow;
+    background: none;
+}
+mark.green {
+    color:yellow;
+    background: none;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 75vw;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px
+}
+.image{
+    background-color: #12192c;
+    display: flex;
+    border-radius: 12px 0 0 12px;
+}
+.image img{
+height: 350px;
+margin:50px auto;
+}
+.content{
+    background-color: #12192c;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0  12px 12px 0;
+    color: #fff;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color:#ffffff
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 2px solid #4158D0;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: #C850C0;
+}
+
+.vertical-line{
+    height: 30px;
+    width: 3px;
+    background: #C850C0;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: #C850C0;
+    cursor: pointer;
+}
+
+
+/*****************/
+
+@media(max-width: 900px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+    }
+    .image{
+        height: 550px;
+        border-radius: none;
+    }
+    .content{
+        height: 100vh;
+        border-radius: none;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+.credit{
+    text-align: center;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .credit a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+  } 
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/*Navigation Bar: Logo and Image  */
+
+#logo{
+    margin: 34px 40px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 10px 12px;
+    border-radius: 28px;
+}
+
+
+/* Navigation Bar: List styling */
+
+
+#navbar ul{
+    display: flex;
+    margin:10px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(24, 22, 22);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+#navbar ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    font-family: 'PT Serif', serif;
+}
+
+#navbar ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none; 
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: cornsilk;
+    border-radius: 16px;
+    
+}
+
+
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="fork.jpg" alt="Myonlinemeal.com">
+            </div>
+    
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="services.html">Services</a></li>
+                <li class="item"><a href="about.html">About US</a></li>
+                <li class="item"><a href="contact.html">Contact Us</a></li>
+                <li class="item "><a href="Login.html">Login</a></li>
+                <li class="item"><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class = "image" >
+               <img src="bg.jpg" > 
+              
+            </div>
+
+            <div class = "content" >
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p style="text-align:justify; text-justify: inter-word;"><h2><mark class="green">Aavo "khavo"</mark></h2>
+
+                    “We bought to be about something beyond moving chicken. We bought to be a piece of our client’s lives and the networks in which we serve.”
+                    Our originator, settled on the choice to close on Sundays in 2022 when he opened his first eatery in khammam, Telangana. Having worked seven days in eateries open 24 hours, saw the significance of shutting on Sundays with the goal that he and his representatives could set aside one day to rest and love whether they pick – a training we maintain today.
+                    <br> <br>
+                   <h4> Building up a positive heritage in our very own lawn</h4>
+                  <br>
+                    We’re glad for our khammam legacy, and all the more explicitly that we consider  the place where we grew up. Our central command, referred to inside the organization as the Support Center for eatery Operators, is found only outside of wyra road.
+                    
+                    We are accomplices with the more prominent  business network in generous undertakings, attempting to animate the neighborhood economy through employment creation, just as driving stewardship activities planned to leave Telangana superior to anything we discovered it.
+                    <br> <br>
+                    <h4>Visit us</h4>
+                    <br>
+                    The <mark class="red">‘Aavo "khavo" ’</mark>Backstage Tour offers a genuine narrating background roused by the entrancing history, culture, and estimations of the organization.
+                    <br>
+                    From our neighborly  Name story with our guided strolling visit.</p>
+                <ul class = "links">
+                    <li><a href = "#">work</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "#">service</a></li>
+                    <div class = "vertical-line"></div>
+                    <li><a href = "#">contact</a></li>
+                </ul>
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-github"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+        </section><br><br>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Learning Robo</a></div>
+    </body>
+</html>
